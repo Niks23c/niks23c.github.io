@@ -5,32 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nikhil Chavan | Data Analyst Portfolio</title>
 
-  <!-- Google Fonts + Icons -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-
-  <!-- Bootstrap & Custom CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 
-  <!-- AOS Animation CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
   <style>
     body {
-      font-family: 'Lato', sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: #f8f9fa;
+      margin: 0;
+      padding: 0;
       color: #333;
     }
 
     header {
       text-align: center;
-      padding: 40px 20px;
-      background: #fff;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #4b6cb7, #182848);
+      color: white;
     }
 
     header h1 {
-      margin-bottom: 10px;
+      margin: 0;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    header h3 {
+      margin-top: 10px;
+      font-weight: 300;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .container {
@@ -39,94 +62,108 @@
       padding: 40px 20px;
     }
 
+    h2 {
+      color: #4b6cb7;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
     .project {
-      margin-bottom: 60px;
+      background: white;
+      border-radius: 12px;
       padding: 20px;
-      border-radius: 8px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 50px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .project h3 {
+      color: #182848;
     }
 
     .project img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
       margin-bottom: 20px;
-      display: block;
-    }
-
-    .project h3 {
-      font-size: 24px;
-      margin-top: 0;
-    }
-
-    .project p {
-      font-size: 16px;
-      margin-bottom: 15px;
     }
 
     .project a {
+      color: #4b6cb7;
       font-weight: bold;
-      color: #007bff;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    #skills ul {
+      padding-left: 20px;
+    }
+
+    #skills li {
+      line-height: 1.8em;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #fff;
+      background: linear-gradient(to right, #182848, #4b6cb7);
+      color: white;
       font-size: 14px;
     }
 
     footer a {
-      color: #007bff;
+      color: #fff;
       margin: 0 10px;
     }
 
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
+    footer a:hover {
+      text-decoration: underline;
     }
 
-    #contact input, #contact textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
-
-    #contact button {
+    button, .btn-primary {
+      background-color: #4b6cb7;
+      color: white;
       padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
       border: none;
-      border-radius: 4px;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    button:hover, .btn-primary:hover {
+      background-color: #182848;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Header -->
   <header data-aos="fade-down">
     <h1>Nikhil Chavan</h1>
     <h3>Data Analyst | Power BI | SQL | Excel</h3>
-    <a href="assets/Nikhil_Chavan_Resume.pdf" class="btn btn-primary" target="_blank">Download Resume</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="margin-top: 20px;">
+      <a href="assets/Nikhil_Chavan_Resume.pdf" class="btn-primary" target="_blank">Download Resume</a>
+    </div>
   </header>
 
-  <!-- About -->
   <section id="about" class="container" data-aos="fade-up">
     <h2>About Me</h2>
     <p>
-      I’m a data analyst with a strong foundation in Power BI, SQL, and Excel. I love turning data into actionable insights using dashboards, automation, and storytelling.
+      I’m a data analyst with a strong foundation in Power BI, SQL, and Excel. I love turning raw data into insights using dashboards, automation, and storytelling.
     </p>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="container" data-aos="fade-up">
+  <section id="projects" class="container" data-aos="zoom-in">
     <h2>Projects</h2>
 
-    <!-- Pizza Project -->
-    <div class="project" data-aos="fade-up">
+    <!-- Project 1 -->
+    <div class="project">
       <h3>Pizza Sales Analysis (SQL + Power BI)</h3>
       <p>
         Analyzed pizza shop orders using SQL and built an interactive Power BI dashboard showing revenue, top-selling pizzas, order trends, and busiest time slots using slicers and bookmarks.
@@ -138,36 +175,33 @@
       <img src="assets/images/Pizza2.png" alt="Pizza Screenshot 2" />
     </div>
 
-    <!-- Future projects like Coffee / TV AdEx can go here -->
+    <!-- Add more projects here -->
 
   </section>
 
-  <!-- Skills -->
-  <section id="skills" class="container" data-aos="fade-up">
+  <section id="skills" class="container" data-aos="fade-right">
     <h2>Skills</h2>
     <ul>
       <li>Power BI</li>
       <li>SQL</li>
       <li>Excel</li>
       <li>Python</li>
-      <li>Power Query</li>
+      <li>Power Query (M)</li>
+      <li>DAX</li>
       <li>Data Cleaning</li>
-      <li>Dashboard Design</li>
       <li>Reporting Automation</li>
     </ul>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="container" data-aos="fade-up">
+  <section id="contact" class="container" data-aos="fade-left">
     <h2>Get in Touch</h2>
     <form method="POST" action="https://formspree.io/f/mnqeqyql">
-      <input type="email" name="_replyto" placeholder="Your email" required>
-      <textarea name="message" placeholder="Your message" required></textarea>
+      <input type="email" name="_replyto" placeholder="Your email" required style="width:100%; padding:10px; margin-bottom:10px;">
+      <textarea name="message" placeholder="Your message" required style="width:100%; padding:10px; height:150px;"></textarea><br>
       <button type="submit">Send</button>
     </form>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2024 Nikhil Chavan</p>
     <p>
@@ -178,14 +212,10 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/scripts.min.js"></script>
-
-  <!-- AOS Animation JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 800,
+      duration: 1000,
       once: true
     });
   </script>
