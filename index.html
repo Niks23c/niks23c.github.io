@@ -1,128 +1,74 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nikhil Chavan | Data Analyst Portfolio</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .project {
+      margin-bottom: 60px;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .project h3 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+    .project p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .project a {
+      font-weight: bold;
+      color: #007bff;
+    }
+  </style>
 </head>
-
 <body>
-  <div id="mobile-menu-open" class="shadow-large"><i class="fa fa-bars" aria-hidden="true"></i></div>
 
-  <header>
-    <div id="mobile-menu-close"><span>Close</span> <i class="fa fa-times" aria-hidden="true"></i></div>
-    <ul id="menu" class="shadow">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <header style="text-align: center; padding: 30px;">
+    <h1>Nikhil Chavan</h1>
+    <h3>Data Analyst | Power BI | SQL | Excel</h3>
+    <a href="assets/Nikhil_Chavan_Resume.pdf" class="btn btn-primary" target="_blank">Download Resume</a>
   </header>
 
-  <div id="lead">
-    <div id="lead-content">
-      <h1>Nikhil Chavan</h1>
-      <h2>Data Analyst | Power BI | SQL | Excel</h2>
-      <a href="assets/Nikhil_Chavan_Resume.pdf" class="btn-rounded-white" target="_blank">Download Resume</a>
-    </div>
-    <div id="lead-overlay"></div>
-    <div id="lead-down"><span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></div>
-  </div>
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      I’m a data analyst with a strong foundation in Power BI, SQL, and Excel. I love turning data into actionable insights using dashboards, automation, and storytelling.
+    </p>
+  </section>
 
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4"><h2 class="heading">About Me</h2></div>
-        <div class="col-md-8">
-          <p>
-            I’m a data analyst skilled in Power BI, SQL, and Excel. I specialize in building dashboards, cleaning data, and automating reports. My work supports decision-making with clear visual storytelling.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <section id="projects" class="container">
+    <h2>Projects</h2>
 
-  <div id="experience" class="background-alt">
-    <h2 class="heading">Experience</h2>
-    <div id="experience-timeline">
-      <div data-date="Nov 2018 – Feb 2021">
-        <h3>Bajaj Capital Ltd.</h3>
-        <h4>Deputy Manager</h4>
-        <p>
-          Delivered Excel-based performance reports that increased sales by 10% annually. Promoted within 2 years. Supported client data tracking and product performance.
-        </p>
-      </div>
-      <div data-date="DEC 2022 – Present">
-        <h3>Kothari Agritech PVT LTD.</h3>
-        <h4>Data Operations Executive</h4>
-        <p>
-          Developed Power BI dashboards and automated SQL reports for inventory, PPC, and sales analysis. Reduced reporting time by over 60%.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div id="education">
-    <h2 class="heading">Education</h2>
-    <div class="education-block">
-      <h3>Solapur University</h3>
-      <span class="education-date">2015 - 2018</span>
-      <h4>Bachelor of Engineering (Mechanical)</h4>
-    </div>
-    <div class="education-block">
-      <h3>Government Polytechnic, Ratnagiri</h3>
-      <span class="education-date">2012 - 2015</span>
-      <h4>Diploma in Mechanical Engineering</h4>
-    </div>
-  </div>
-
-  <div id="projects" class="background-alt">
-    <h2 class="heading">Projects</h2>
-    <div class="container">
-      <div class="row">
-
-      <div class="project shadow-large">
-  <!-- Clear layout wrapper -->
-  <div class="project-content" style="display: block; clear: both; padding-bottom: 30px;">
-
-    <!-- Project Info -->
-    <div class="project-info" style="margin-bottom: 30px;">
+    <div class="project">
       <h3>Pizza Sales Analysis (SQL + Power BI)</h3>
       <p>
         Analyzed pizza shop orders using SQL and built an interactive Power BI dashboard showing revenue, top-selling pizzas, order trends, and busiest time slots using slicers and bookmarks.
       </p>
       <a href="https://github.com/Niks23c/Pizza-Sales-Analysis-SQL-PowerBI-" target="_blank">View Project</a>
+
+      <img src="assets/images/PIZZA.gif" alt="Pizza Dashboard GIF" />
+      <img src="assets/images/pizza1.png" alt="Pizza Screenshot 1" />
+      <img src="assets/images/pizza2.png" alt="Pizza Screenshot 2" />
     </div>
 
-    <!-- GIF -->
-    <div style="width: 100%; display: block; margin-bottom: 30px;">
-      <img src="assets/images/PIZZA.gif" alt="Pizza Dashboard GIF" style="width: 100%; border-radius: 8px; display: block;">
-    </div>
+  </section>
 
-    <!-- Screenshots -->
-    <div style="width: 100%; display: block;">
-      <img src="assets/images/pizza1.png" alt="Pizza Screenshot 1" style="width: 100%; border-radius: 8px; margin-bottom: 20px; display: block;">
-      <img src="assets/images/Pizza2.png" alt="Pizza Screenshot 2" style="width: 100%; border-radius: 8px; display: block;">
-    </div>
-
-  </div>
-</div>
-
-      </div>
-    </div>
-  </div>
-
-  <div id="skills">
-    <h2 class="heading">Skills</h2>
+  <section id="skills" class="container">
+    <h2>Skills</h2>
     <ul>
       <li>Power BI</li>
       <li>SQL</li>
@@ -130,44 +76,27 @@
       <li>Python</li>
       <li>Power Query</li>
       <li>Data Cleaning</li>
-      <li>Dashboard Design</li>
       <li>Reporting Automation</li>
     </ul>
-  </div>
+  </section>
 
-  <div id="contact">
+  <section id="contact" class="container">
     <h2>Get in Touch</h2>
-    <div id="contact-form">
-      <form method="POST" action="https://formspree.io/f/mnqeqyql">
-        <input type="hidden" name="_subject" value="Contact request from portfolio" />
-        <input type="email" name="_replyto" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </div>
+    <form method="POST" action="https://formspree.io/f/mnqeqyql">
+      <input type="email" name="_replyto" placeholder="Your email" required><br><br>
+      <textarea name="message" placeholder="Your message" required></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5 copyright">
-          <p>&copy; <span id="current-year">2024</span> Nikhil Chavan</p>
-        </div>
-        <div class="col-sm-2 top">
-          <span id="to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
-        </div>
-        <div class="col-sm-5 social">
-          <ul>
-            <li><a href="https://github.com/Niks23c" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/in/nikhil-c-993548151" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="mailto:nikhilcaptain4@gmail.com"><i class="fa fa-envelope"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <footer style="text-align: center; padding: 20px;">
+    <p>&copy; 2024 Nikhil Chavan</p>
+    <p>
+      <a href="https://github.com/Niks23c" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/nikhil-c-993548151" target="_blank">LinkedIn</a> |
+      <a href="mailto:nikhilcaptain4@gmail.com">Email</a>
+    </p>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/scripts.min.js"></script>
 </body>
 </html>
